@@ -37,7 +37,7 @@ Alternativ: Vercel CLI ilə — qovluqda `npx vercel --prod` əmrini icra edin.
 >
 > 🎨 Peşənizə uyğun fərdi dizayn
 > 📱 100% mobil uyğunluq
-> ⚡ 2-4 günə təhvil
+> ⚡ 1 günə təhvil
 > 💰 Qiymət: cəmi 30 AZN
 > 🔗 Öz linkinizlə paylaşın — CV-dən qat-qat güclü təsir!
 >
