@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio Studio — Hər Peşəyə Uyğun Peşəkar Portfolio</title>
+<meta name="description" content="Dizayner, proqramçı, fotoqraf, SMM mütəxəssisi və hər bir peşə sahibi üçün peşəkar portfolio nümunələri. Karyeranızı bir addım irəli aparın.">
+<style>
+  :root{
+    --bg:#0b0f19; --card:#131a2a; --card2:#1a2236;
+    --text:#e8ecf4; --muted:#94a3b8;
+    --accent:#6366f1; --accent2:#a855f7; --gold:#f59e0b;
+    --radius:18px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;overflow-x:hidden}
+  a{color:inherit;text-decoration:none}
+  .container{max-width:1140px;margin:0 auto;padding:0 24px}
+
+  /* NAV */
+  nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(11,15,25,.8);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.06)}
+  .nav-inner{display:flex;align-items:center;justify-content:space-between;height:68px}
+  .logo{font-weight:800;font-size:1.25rem;letter-spacing:-.5px}
+  .logo span{background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .nav-links{display:flex;gap:28px;font-size:.95rem;color:var(--muted)}
+  .nav-links a:hover{color:var(--text)}
+  .btn{display:inline-block;padding:12px 26px;border-radius:12px;font-weight:600;font-size:.95rem;transition:.25s;cursor:pointer;border:none}
+  .btn-primary{background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff;box-shadow:0 8px 24px rgba(99,102,241,.35)}
+  .btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 32px rgba(99,102,241,.5)}
+  .btn-ghost{border:1px solid rgba(255,255,255,.18);color:var(--text)}
+  .btn-ghost:hover{background:rgba(255,255,255,.06)}
+
+  /* HERO */
+  .hero{padding:160px 0 90px;position:relative;text-align:center}
+  .hero::before{content:'';position:absolute;top:-200px;left:50%;transform:translateX(-50%);width:900px;height:600px;background:radial-gradient(ellipse,rgba(99,102,241,.22),transparent 65%);pointer-events:none}
+  .badge{display:inline-block;padding:7px 18px;border-radius:99px;background:rgba(99,102,241,.12);border:1px solid rgba(99,102,241,.35);color:#a5b4fc;font-size:.85rem;font-weight:600;margin-bottom:24px}
+  .hero h1{font-size:clamp(2.2rem,5.5vw,4rem);font-weight:800;letter-spacing:-1.5px;line-height:1.15;margin-bottom:22px}
+  .hero h1 em{font-style:normal;background:linear-gradient(135deg,#818cf8,#c084fc,#f472b6);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .hero p{max-width:640px;margin:0 auto 36px;color:var(--muted);font-size:1.12rem}
+  .hero-actions{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+  .stats{display:flex;justify-content:center;gap:56px;margin-top:70px;flex-wrap:wrap}
+  .stat b{display:block;font-size:2rem;font-weight:800;background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .stat span{color:var(--muted);font-size:.9rem}
+
+  /* SECTIONS */
+  section{padding:90px 0}
+  .sec-head{text-align:center;max-width:620px;margin:0 auto 56px}
+  .sec-head .tag{color:var(--accent);font-weight:700;font-size:.85rem;text-transform:uppercase;letter-spacing:2px}
+  .sec-head h2{font-size:clamp(1.7rem,3.5vw,2.5rem);font-weight:800;letter-spacing:-.8px;margin:10px 0 14px}
+  .sec-head p{color:var(--muted)}
+
+  /* PORTFOLIO CARDS */
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(255px,1fr));gap:26px}
+  .card{background:var(--card);border:1px solid rgba(255,255,255,.07);border-radius:var(--radius);overflow:hidden;transition:.3s;display:flex;flex-direction:column}
+  .card:hover{transform:translateY(-6px);border-color:rgba(99,102,241,.5);box-shadow:0 20px 40px rgba(0,0,0,.4)}
+  .card-cover{height:170px;display:flex;align-items:center;justify-content:center;font-size:3.4rem;position:relative}
+  .cov-1{background:linear-gradient(135deg,#7c3aed,#db2777)}
+  .cov-2{background:linear-gradient(135deg,#0ea5e9,#6366f1)}
+  .cov-3{background:linear-gradient(135deg,#f59e0b,#ef4444)}
+  .cov-4{background:linear-gradient(135deg,#10b981,#0ea5e9)}
+  .card-body{padding:24px;flex:1;display:flex;flex-direction:column}
+  .card-body h3{font-size:1.15rem;font-weight:700;margin-bottom:8px}
+  .card-body p{color:var(--muted);font-size:.92rem;flex:1;margin-bottom:18px}
+  .card-link{color:#a5b4fc;font-weight:600;font-size:.92rem}
+  .card-link:hover{color:#c7d2fe}
+
+  /* FEATURES */
+  .feat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px}
+  .feat{background:var(--card);border:1px solid rgba(255,255,255,.07);border-radius:var(--radius);padding:30px}
+  .feat .ico{width:52px;height:52px;border-radius:14px;background:rgba(99,102,241,.15);display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin-bottom:18px}
+  .feat h3{font-size:1.05rem;font-weight:700;margin-bottom:8px}
+  .feat p{color:var(--muted);font-size:.92rem}
+
+  /* STEPS */
+  .steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:24px;counter-reset:step}
+  .step{background:var(--card);border:1px solid rgba(255,255,255,.07);border-radius:var(--radius);padding:30px;position:relative}
+  .step::before{counter-increment:step;content:"0" counter(step);font-size:2.6rem;font-weight:800;color:rgba(99,102,241,.25);position:absolute;top:16px;right:22px}
+  .step h3{font-weight:700;margin-bottom:8px;font-size:1.05rem}
+  .step p{color:var(--muted);font-size:.92rem}
+
+  /* CTA */
+  .cta-box{background:linear-gradient(135deg,rgba(99,102,241,.18),rgba(168,85,247,.18));border:1px solid rgba(99,102,241,.35);border-radius:24px;padding:64px 40px;text-align:center}
+  .cta-box h2{font-size:clamp(1.6rem,3.5vw,2.3rem);font-weight:800;letter-spacing:-.8px;margin-bottom:14px}
+  .cta-box p{color:var(--muted);max-width:520px;margin:0 auto 30px}
+
+  footer{border-top:1px solid rgba(255,255,255,.07);padding:36px 0;text-align:center;color:var(--muted);font-size:.9rem}
+  footer .logo{margin-bottom:10px}
+
+  @media(max-width:720px){
+    .nav-links{display:none}
+    .stats{gap:32px}
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="container nav-inner">
+    <a href="#" class="logo">Portfolio<span>Studio</span></a>
+    <div class="nav-links">
+      <a href="#numuneler">Nümunələr</a>
+      <a href="#niye">Niyə Portfolio?</a>
+      <a href="#proses">Proses</a>
+      <a href="#elaqe">Əlaqə</a>
+    </div>
+    <a href="#elaqe" class="btn btn-primary">Sifariş et</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="container">
+    <span class="badge">✦ Hər peşəyə uyğun fərdi portfolio</span>
+    <h1>Peşəkar karyeranız üçün<br><em>peşəkar portfolio</em></h1>
+    <p>Dizayner, proqramçı, fotoqraf, SMM mütəxəssisi və ya istənilən peşə sahibisinizsə — işlərinizi dünyaya göstərən, müştəri qazandıran müasir portfolio saytınızı biz hazırlayırıq.</p>
+    <div class="hero-actions">
+      <a href="#numuneler" class="btn btn-primary">Nümunələrə bax</a>
+      <a href="#elaqe" class="btn btn-ghost">Pulsuz məsləhət al</a>
+    </div>
+    <div class="stats">
+      <div class="stat"><b>50+</b><span>Hazır portfolio</span></div>
+      <div class="stat"><b>4</b><span>Fərqli peşə şablonu</span></div>
+      <div class="stat"><b>24-48s</b><span>Təhvil müddəti</span></div>
+      <div class="stat"><b>100%</b><span>Mobil uyğunluq</span></div>
+    </div>
+  </div>
+</header>
+
+<section id="numuneler">
+  <div class="container">
+    <div class="sec-head">
+      <span class="tag">Nümunələr</span>
+      <h2>Hər peşəyə uyğun hazır nümunələr</h2>
+      <p>Aşağıdakı canlı demolara baxın — hər biri fərqli peşə üçün xüsusi dizayn edilib.</p>
+    </div>
+    <div class="grid">
+      <a class="card" href="dizayner.html">
+        <div class="card-cover cov-1">🎨</div>
+        <div class="card-body">
+          <h3>Qrafik Dizayner</h3>
+          <p>Vizual işlərin qalereyası, brendinq layihələri və yaradıcı üslubda təqdimat.</p>
+          <span class="card-link">Demoya bax →</span>
+        </div>
+      </a>
+      <a class="card" href="developer.html">
+        <div class="card-cover cov-2">💻</div>
+        <div class="card-body">
+          <h3>Proqramçı / Developer</h3>
+          <p>Layihələr, texnologiya stack-i, GitHub inteqrasiyası və texniki bacarıqlar.</p>
+          <span class="card-link">Demoya bax →</span>
+        </div>
+      </a>
+      <a class="card" href="fotoqraf.html">
+        <div class="card-cover cov-3">📸</div>
+        <div class="card-body">
+          <h3>Fotoqraf</h3>
+          <p>Tam ekran foto qalereyası, çəkiliş paketləri və rezervasiya bölməsi.</p>
+          <span class="card-link">Demoya bax →</span>
+        </div>
+      </a>
+      <a class="card" href="smm.html">
+        <div class="card-cover cov-4">📱</div>
+        <div class="card-body">
+          <h3>SMM Mütəxəssisi</h3>
+          <p>Keys nəticələri, statistika artımları və idarə olunan hesab nümunələri.</p>
+          <span class="card-link">Demoya bax →</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="niye" style="background:var(--card);border-top:1px solid rgba(255,255,255,.05);border-bottom:1px solid rgba(255,255,255,.05)">
+  <div class="container">
+    <div class="sec-head">
+      <span class="tag">Üstünlüklər</span>
+      <h2>Niyə portfolio saytı vacibdir?</h2>
+      <p>CV artıq kifayət etmir. İşəgötürənlərin 70%-i namizədi onlayn axtarır.</p>
+    </div>
+    <div class="feat-grid">
+      <div class="feat" style="background:var(--card2)">
+        <div class="ico">🚀</div>
+        <h3>İlk təəssürat</h3>
+        <p>Peşəkar sayt sizi rəqiblərdən dərhal fərqləndirir və ciddi mütəxəssis imici yaradır.</p>
+      </div>
+      <div class="feat" style="background:var(--card2)">
+        <div class="ico">🌍</div>
+        <h3>24/7 görünürlük</h3>
+        <p>Portfolionuz gecə-gündüz işləyir — siz yatarkən belə yeni müştərilər sizi tapır.</p>
+      </div>
+      <div class="feat" style="background:var(--card2)">
+        <div class="ico">💼</div>
+        <h3>Daha çox sifariş</h3>
+        <p>İşlərini vizual göstərən mütəxəssislər 3 dəfə çox müraciət alır.</p>
+      </div>
+      <div class="feat" style="background:var(--card2)">
+        <div class="ico">📈</div>
+        <h3>Karyera artımı</h3>
+        <p>Xarici şirkətlərə müraciətdə portfolio linki CV-dən daha güclü təsir edir.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="proses">
+  <div class="container">
+    <div class="sec-head">
+      <span class="tag">Proses</span>
+      <h2>Necə işləyirik?</h2>
+      <p>Sadə 4 addımda portfolionuz hazır olur.</p>
+    </div>
+    <div class="steps">
+      <div class="step"><h3>Müraciət</h3><p>Bizimlə əlaqə saxlayın, peşənizi və istəklərinizi bildirin.</p></div>
+      <div class="step"><h3>Material</h3><p>İşlərinizi, foto və məlumatlarınızı bizə göndərin.</p></div>
+      <div class="step"><h3>Dizayn</h3><p>Peşənizə uyğun fərdi dizayn hazırlayıb təsdiqinizə göndəririk.</p></div>
+      <div class="step"><h3>Təhvil</h3><p>24-48 saat ərzində saytınız hazır linklə təhvil verilir.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="elaqe">
+  <div class="container">
+    <div class="cta-box">
+      <h2>Portfolionuzu bu gün sifariş edin</h2>
+      <p>Pulsuz məsləhət üçün bizə yazın — peşənizə ən uyğun formatı birlikdə seçək.</p>
+      <a href="mailto:eddyfhn@gmail.com?subject=Portfolio%20sifarişi" class="btn btn-primary">✉ E-poçt ilə yazın</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="logo">Portfolio<span>Studio</span></div>
+    <p>© 2026 Portfolio Studio — Hər peşəyə uyğun peşəkar portfolio həlləri.</p>
+  </div>
+</footer>
+
+</body>
+</html>

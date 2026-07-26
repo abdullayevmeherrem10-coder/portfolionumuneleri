@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tural Əliyev — Full-Stack Developer | Portfolio Nümunəsi</title>
+<style>
+  :root{--bg:#0a0e14;--panel:#111722;--border:#1e2836;--text:#d6e2f0;--muted:#7d8ca0;--green:#22d3a5;--blue:#38bdf8;--radius:14px}
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:'Cascadia Code','Consolas','Segoe UI',monospace;background:var(--bg);color:var(--text);line-height:1.65}
+  a{text-decoration:none;color:inherit}
+  .container{max-width:1000px;margin:0 auto;padding:0 24px}
+  .demo-bar{background:#22d3a5;color:#06281f;text-align:center;padding:9px;font-size:.85rem;font-weight:600}
+  .demo-bar a{color:#06281f;text-decoration:underline}
+  nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0}
+  .logo{font-weight:700;font-size:1.1rem}
+  .logo::before{content:'~/';color:var(--green)}
+  .nav-links{display:flex;gap:24px;font-size:.9rem;color:var(--muted)}
+  .nav-links a:hover{color:var(--green)}
+  .btn{display:inline-block;padding:12px 26px;border-radius:8px;font-weight:600;font-size:.92rem;transition:.25s;font-family:inherit}
+  .btn-green{background:var(--green);color:#06281f}
+  .btn-green:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(34,211,165,.35)}
+  .btn-outline{border:1px solid var(--border);color:var(--text)}
+  .btn-outline:hover{border-color:var(--green);color:var(--green)}
+
+  .hero{padding:80px 0 70px}
+  .prompt{color:var(--green);font-size:.95rem;margin-bottom:16px}
+  .prompt::before{content:'$ '}
+  .hero h1{font-size:clamp(2rem,5vw,3.2rem);font-weight:700;letter-spacing:-1px;line-height:1.15;margin-bottom:18px}
+  .hero h1 span{color:var(--blue)}
+  .cursor{display:inline-block;width:14px;height:1em;background:var(--green);animation:blink 1s steps(1) infinite;vertical-align:text-bottom}
+  @keyframes blink{50%{opacity:0}}
+  .hero p{color:var(--muted);max-width:560px;margin-bottom:30px;font-size:1.02rem}
+  .hero-actions{display:flex;gap:14px;flex-wrap:wrap}
+
+  section{padding:70px 0}
+  h2{font-size:1.6rem;font-weight:700;margin-bottom:8px}
+  h2::before{content:'// ';color:var(--green)}
+  .sub{color:var(--muted);margin-bottom:38px;font-size:.95rem}
+
+  .projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:22px}
+  .proj{background:var(--panel);border:1px solid var(--border);border-radius:var(--radius);padding:26px;transition:.25s;display:flex;flex-direction:column}
+  .proj:hover{border-color:var(--green);transform:translateY(-4px)}
+  .proj-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px}
+  .proj-top .folder{font-size:1.6rem}
+  .proj-top .links{color:var(--muted);font-size:.85rem}
+  .proj h3{font-size:1.08rem;margin-bottom:8px;color:var(--blue)}
+  .proj p{color:var(--muted);font-size:.9rem;flex:1;margin-bottom:16px}
+  .tags{display:flex;flex-wrap:wrap;gap:8px}
+  .tags span{font-size:.78rem;color:var(--green);background:rgba(34,211,165,.1);padding:4px 10px;border-radius:6px}
+
+  .stack{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px}
+  .tech{background:var(--panel);border:1px solid var(--border);border-radius:10px;padding:16px;text-align:center;font-size:.92rem;transition:.2s}
+  .tech:hover{border-color:var(--blue);color:var(--blue)}
+  .tech b{display:block;font-size:1.5rem;margin-bottom:6px}
+
+  .terminal{background:var(--panel);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden}
+  .term-head{background:#0d1420;padding:12px 18px;display:flex;gap:8px;border-bottom:1px solid var(--border)}
+  .dot{width:12px;height:12px;border-radius:50%}
+  .term-body{padding:26px;font-size:.95rem;line-height:2}
+  .term-body .k{color:var(--green)}
+  .term-body .v{color:var(--blue)}
+
+  footer{border-top:1px solid var(--border);text-align:center;padding:32px 0;color:var(--muted);font-size:.85rem}
+  @media(max-width:720px){.nav-links{display:none}}
+</style>
+</head>
+<body>
+
+<div class="demo-bar">💻 Bu, Developer portfolio nümunəsidir — <a href="index.html">← bütün nümunələrə qayıt</a></div>
+
+<div class="container">
+  <nav>
+    <div class="logo">tural.dev</div>
+    <div class="nav-links">
+      <a href="#layiheler">layihələr</a>
+      <a href="#stack">stack</a>
+      <a href="#elaqe">əlaqə</a>
+    </div>
+    <a href="#elaqe" class="btn btn-green">İşə götür</a>
+  </nav>
+
+  <header class="hero">
+    <div class="prompt">whoami</div>
+    <h1>Salam, mən <span>Tural</span>.<br>Full-Stack Developer<span class="cursor"></span></h1>
+    <p>4 ildir veb və mobil tətbiqlər hazırlayıram. Startaplardan korporativ sistemlərə qədər — ideyanı işlək məhsula çevirirəm. Təmiz kod, sürətli nəticə.</p>
+    <div class="hero-actions">
+      <a href="#layiheler" class="btn btn-green">Layihələrə bax</a>
+      <a href="#elaqe" class="btn btn-outline">CV yüklə</a>
+    </div>
+  </header>
+
+  <section id="layiheler">
+    <h2>layihələr</h2>
+    <p class="sub">Seçilmiş işlər — hər biri real istifadəçilərə xidmət edir.</p>
+    <div class="projects">
+      <div class="proj">
+        <div class="proj-top"><span class="folder">📁</span><span class="links">github ↗ · demo ↗</span></div>
+        <h3>E-Commerce Platforması</h3>
+        <p>Onlayn mağaza: ödəniş inteqrasiyası, admin panel, real-time sifariş izləmə. Aylıq 10K+ aktiv istifadəçi.</p>
+        <div class="tags"><span>React</span><span>Node.js</span><span>PostgreSQL</span><span>Stripe</span></div>
+      </div>
+      <div class="proj">
+        <div class="proj-top"><span class="folder">📁</span><span class="links">github ↗ · demo ↗</span></div>
+        <h3>Rezervasiya Sistemi</h3>
+        <p>Klinikalar üçün onlayn növbə sistemi: SMS bildiriş, təqvim sinxronizasiyası, hesabat paneli.</p>
+        <div class="tags"><span>Next.js</span><span>TypeScript</span><span>Prisma</span></div>
+      </div>
+      <div class="proj">
+        <div class="proj-top"><span class="folder">📁</span><span class="links">github ↗ · demo ↗</span></div>
+        <h3>Mobil Fitnes Tətbiqi</h3>
+        <p>Fərdi məşq planları, irəliləyiş qrafikləri və push bildirişlər ilə cross-platform tətbiq.</p>
+        <div class="tags"><span>React Native</span><span>Firebase</span></div>
+      </div>
+      <div class="proj">
+        <div class="proj-top"><span class="folder">📁</span><span class="links">github ↗ · demo ↗</span></div>
+        <h3>AI Chatbot İnteqrasiyası</h3>
+        <p>Müştəri dəstəyi üçün Claude API əsaslı çatbot — sorğuların 60%-ni avtomatik cavablandırır.</p>
+        <div class="tags"><span>Python</span><span>FastAPI</span><span>Claude API</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="stack">
+    <h2>texnologiyalar</h2>
+    <p class="sub">Gündəlik istifadə etdiyim stack.</p>
+    <div class="stack">
+      <div class="tech"><b>⚛</b>React / Next.js</div>
+      <div class="tech"><b>🟢</b>Node.js</div>
+      <div class="tech"><b>🐍</b>Python</div>
+      <div class="tech"><b>🗄</b>PostgreSQL</div>
+      <div class="tech"><b>📱</b>React Native</div>
+      <div class="tech"><b>☁</b>AWS / Vercel</div>
+      <div class="tech"><b>🐳</b>Docker</div>
+      <div class="tech"><b>🔀</b>Git / CI-CD</div>
+    </div>
+  </section>
+
+  <section id="elaqe">
+    <h2>əlaqə</h2>
+    <p class="sub">Layihəniz var? Danışaq.</p>
+    <div class="terminal">
+      <div class="term-head">
+        <span class="dot" style="background:#ef4444"></span>
+        <span class="dot" style="background:#f59e0b"></span>
+        <span class="dot" style="background:#22d3a5"></span>
+      </div>
+      <div class="term-body">
+        <div><span class="k">email:</span> <span class="v">tural@example.com</span></div>
+        <div><span class="k">github:</span> <span class="v">github.com/turaldev</span></div>
+        <div><span class="k">linkedin:</span> <span class="v">linkedin.com/in/turaldev</span></div>
+        <div><span class="k">status:</span> <span class="v">✅ Yeni layihələrə açığam</span></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<footer>© 2026 Tural Əliyev — Full-Stack Developer · Bu səhifə Portfolio Studio nümunəsidir</footer>
+
+</body>
+</html>
