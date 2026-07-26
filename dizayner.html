@@ -36,13 +36,7 @@
   .works{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:26px}
   .work{border-radius:var(--radius);overflow:hidden;background:#fff;box-shadow:0 6px 24px rgba(26,21,35,.08);transition:.3s}
   .work:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(26,21,35,.15)}
-  .work-img{height:210px;display:flex;align-items:center;justify-content:center;font-size:3.2rem;color:#fff}
-  .w1{background:linear-gradient(135deg,#7c3aed,#a855f7)}
-  .w2{background:linear-gradient(135deg,#db2777,#f472b6)}
-  .w3{background:linear-gradient(135deg,#f59e0b,#fbbf24)}
-  .w4{background:linear-gradient(135deg,#0ea5e9,#38bdf8)}
-  .w5{background:linear-gradient(135deg,#10b981,#34d399)}
-  .w6{background:linear-gradient(135deg,#ef4444,#f87171)}
+  .work img{height:210px;width:100%;object-fit:cover;display:block}
   .work-info{padding:20px 22px}
   .work-info h3{font-size:1.05rem;font-weight:700}
   .work-info p{color:var(--muted);font-size:.88rem}
@@ -77,7 +71,7 @@
 
   <header class="hero">
     <div>
-      <span class="tag">✦ Qrafik Dizayner · 5 il təcrübə</span>
+      <span class="tag">Qrafik Dizayner · 5 il təcrübə</span>
       <h1>Brendinizə <span>yaddaqalan</span> vizual kimlik qazandırıram</h1>
       <p>Loqo dizaynından tam brendinq paketlərinə qədər — bizneslərin vizual dilini yaradıram. 40+ tamamlanmış layihə, 30+ məmnun müştəri.</p>
       <a href="#isler" class="btn btn-dark">İşlərimə bax ↓</a>
@@ -91,12 +85,12 @@
     <h2>Seçilmiş işlərim</h2>
     <p class="sub">Hər layihə — müştərinin hekayəsini danışan unikal dizayn.</p>
     <div class="works">
-      <div class="work"><div class="work-img w1">◈</div><div class="work-info"><h3>Kafe brendinq paketi</h3><p>Loqo · Menyu · Sosial media kit</p></div></div>
-      <div class="work"><div class="work-img w2">✦</div><div class="work-info"><h3>Gözəllik salonu kimliyi</h3><p>Loqo · Vizitkart · İnteryer qrafikası</p></div></div>
-      <div class="work"><div class="work-img w3">▲</div><div class="work-info"><h3>Tikinti şirkəti rebrendinqi</h3><p>Korporativ kimlik · Katalog dizaynı</p></div></div>
-      <div class="work"><div class="work-img w4">●</div><div class="work-info"><h3>Mobil tətbiq UI dəsti</h3><p>İkonlar · İllüstrasiyalar · Onboarding</p></div></div>
-      <div class="work"><div class="work-img w5">◆</div><div class="work-info"><h3>Festival afişa seriyası</h3><p>Poster · Bilet · Açıq hava reklamı</p></div></div>
-      <div class="work"><div class="work-img w6">✺</div><div class="work-info"><h3>E-ticarət qablaşdırması</h3><p>Qutu dizaynı · Etiket · Stiker dəsti</p></div></div>
+      <div class="work"><img src="img/brendinq.jpg" alt="Loqo eskizləri"><div class="work-info"><h3>Brend kimliyi üzərində iş</h3><p>Loqo eskizləri · Rəng seçimi · Kompozisiya</p></div></div>
+      <div class="work"><img src="img/nesr.jpg" alt="Nəşr dizaynı"><div class="work-info"><h3>Nəşr və kataloq dizaynı</h3><p>Üz qabığı · Maket · Çap hazırlığı</p></div></div>
+      <div class="work"><img src="img/flatlay.jpg" alt="Məhsul vizualı"><div class="work-info"><h3>Aksesuar brendi üçün vizual</h3><p>Məhsul kompozisiyası · Kataloq çəkilişi</p></div></div>
+      <div class="work"><img src="img/veb.jpg" alt="Veb dizayn"><div class="work-info"><h3>Veb sayt dizaynı</h3><p>Ana səhifə · Qalereya · Mobil versiya</p></div></div>
+      <div class="work"><img src="img/kofe.jpg" alt="Kafe brendinqi"><div class="work-info"><h3>Kofe evi brendinqi</h3><p>Loqo · Menyu · İnteryer qrafikası</p></div></div>
+      <div class="work"><img src="img/menyu.jpg" alt="Restoran menyusu"><div class="work-info"><h3>Restoran menyu dizaynı</h3><p>Menyu tərtibatı · Yemək fotolarının stili</p></div></div>
     </div>
   </div>
 </section>
@@ -124,7 +118,7 @@
     <div class="cta">
       <h2>Gəlin birlikdə işləyək</h2>
       <p>Layihəniz üçün pulsuz konsultasiya — fikrinizi bölüşün, 24 saat ərzində cavab verim.</p>
-      <a href="mailto:info@example.com" class="btn btn-light">✉ Mənə yazın</a>
+      <a href="mailto:info@example.com" class="btn btn-light">Mənə yazın</a>
     </div>
   </div>
 </section>

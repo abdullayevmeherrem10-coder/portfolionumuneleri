@@ -34,17 +34,11 @@
   .sec-title h2{font-size:clamp(1.8rem,3.5vw,2.6rem);font-weight:400;font-style:italic;margin-top:10px}
 
   .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px}
-  .photo{aspect-ratio:3/4;display:flex;align-items:flex-end;padding:22px;position:relative;overflow:hidden;transition:.4s;cursor:pointer}
+  .photo{aspect-ratio:3/4;display:flex;align-items:flex-end;padding:22px;position:relative;overflow:hidden;transition:.4s;cursor:pointer;background:#1a1a1a}
+  .photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:.5s}
+  .photo:hover img{transform:scale(1.05)}
   .photo::after{content:'';position:absolute;inset:0;background:linear-gradient(transparent 55%,rgba(0,0,0,.75))}
-  .photo:hover{transform:scale(1.02)}
   .photo span{position:relative;z-index:2;font-size:.8rem;letter-spacing:3px;text-transform:uppercase;font-family:'Segoe UI',sans-serif;color:#fff}
-  .p1{background:linear-gradient(160deg,#8a6d3b,#3d2f16)}
-  .p2{background:linear-gradient(160deg,#5b6d7a,#232d36)}
-  .p3{background:linear-gradient(160deg,#7a5b6d,#361f2c)}
-  .p4{background:linear-gradient(160deg,#4a6d5b,#163023)}
-  .p5{background:linear-gradient(160deg,#6d5b4a,#2e2318)}
-  .p6{background:linear-gradient(160deg,#3b5a8a,#131f33)}
-  .photo .cam{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:3rem;opacity:.45}
 
   .packs{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:26px}
   .pack{border:1px solid #2b2b2b;padding:44px 34px;text-align:center;transition:.3s;background:#151515}
@@ -92,12 +86,12 @@
       <h2>Seçilmiş çəkilişlər</h2>
     </div>
     <div class="gallery">
-      <div class="photo p1"><span>Toy çəkilişi</span></div>
-      <div class="photo p2"><span>Fərdi portret</span></div>
-      <div class="photo p3"><span>Nişan mərasimi</span></div>
-      <div class="photo p4"><span>Təbiət səhnəsi</span></div>
-      <div class="photo p5"><span>Biznes çəkiliş</span></div>
-      <div class="photo p6"><span>Ailə albomu</span></div>
+      <div class="photo"><img src="img/foto2.jpg" alt="Fərdi portret"><span>Fərdi portret</span></div>
+      <div class="photo"><img src="img/foto1.jpg" alt="Təbiət çəkilişi"><span>Təbiət çəkilişi</span></div>
+      <div class="photo"><img src="img/foto3.jpg" alt="Küçə çəkilişi"><span>Küçə çəkilişi</span></div>
+      <div class="photo"><img src="img/foto4.jpg" alt="Tədbir çəkilişi"><span>Tədbir çəkilişi</span></div>
+      <div class="photo"><img src="img/foto5.jpg" alt="Bayram çəkilişi"><span>Bayram çəkilişi</span></div>
+      <div class="photo"><img src="img/foto6.jpg" alt="Sahil çəkilişi"><span>Sahil çəkilişi</span></div>
     </div>
   </div>
 </section>

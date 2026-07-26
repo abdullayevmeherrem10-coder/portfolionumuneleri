@@ -42,9 +42,8 @@
   .projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:22px}
   .proj{background:var(--panel);border:1px solid var(--border);border-radius:var(--radius);padding:26px;transition:.25s;display:flex;flex-direction:column}
   .proj:hover{border-color:var(--green);transform:translateY(-4px)}
-  .proj-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px}
-  .proj-top .folder{font-size:1.6rem}
-  .proj-top .links{color:var(--muted);font-size:.85rem}
+  .proj-img{width:100%;height:150px;object-fit:cover;border-radius:8px;margin-bottom:16px;border:1px solid var(--border)}
+  .proj .links{color:var(--muted);font-size:.83rem;margin-top:14px}
   .proj h3{font-size:1.08rem;margin-bottom:8px;color:var(--blue)}
   .proj p{color:var(--muted);font-size:.9rem;flex:1;margin-bottom:16px}
   .tags{display:flex;flex-wrap:wrap;gap:8px}
@@ -96,28 +95,32 @@
     <p class="sub">Seçilmiş işlər — hər biri real istifadəçilərə xidmət edir.</p>
     <div class="projects">
       <div class="proj">
-        <div class="proj-top"><span class="folder">📁</span><span class="links">github ↗ · demo ↗</span></div>
+        <img class="proj-img" src="img/dev1.jpg" alt="E-commerce layihəsi">
         <h3>E-Commerce Platforması</h3>
-        <p>Onlayn mağaza: ödəniş inteqrasiyası, admin panel, real-time sifariş izləmə. Aylıq 10K+ aktiv istifadəçi.</p>
+        <p>Onlayn mağaza: ödəniş inteqrasiyası, admin panel, sifariş izləmə. Aylıq 10 mindən çox aktiv istifadəçi.</p>
         <div class="tags"><span>React</span><span>Node.js</span><span>PostgreSQL</span><span>Stripe</span></div>
+        <div class="links">github ↗ · canlı demo ↗</div>
       </div>
       <div class="proj">
-        <div class="proj-top"><span class="folder">📁</span><span class="links">github ↗ · demo ↗</span></div>
+        <img class="proj-img" src="img/dev2.jpg" alt="Rezervasiya sistemi">
         <h3>Rezervasiya Sistemi</h3>
         <p>Klinikalar üçün onlayn növbə sistemi: SMS bildiriş, təqvim sinxronizasiyası, hesabat paneli.</p>
         <div class="tags"><span>Next.js</span><span>TypeScript</span><span>Prisma</span></div>
+        <div class="links">github ↗ · canlı demo ↗</div>
       </div>
       <div class="proj">
-        <div class="proj-top"><span class="folder">📁</span><span class="links">github ↗ · demo ↗</span></div>
+        <img class="proj-img" src="img/dev3.jpg" alt="Mobil tətbiq">
         <h3>Mobil Fitnes Tətbiqi</h3>
         <p>Fərdi məşq planları, irəliləyiş qrafikləri və push bildirişlər ilə cross-platform tətbiq.</p>
         <div class="tags"><span>React Native</span><span>Firebase</span></div>
+        <div class="links">github ↗ · App Store ↗</div>
       </div>
       <div class="proj">
-        <div class="proj-top"><span class="folder">📁</span><span class="links">github ↗ · demo ↗</span></div>
-        <h3>AI Chatbot İnteqrasiyası</h3>
-        <p>Müştəri dəstəyi üçün Claude API əsaslı çatbot — sorğuların 60%-ni avtomatik cavablandırır.</p>
-        <div class="tags"><span>Python</span><span>FastAPI</span><span>Claude API</span></div>
+        <img class="proj-img" src="img/dev4.jpg" alt="Çatbot layihəsi">
+        <h3>Dəstək Çatbotu</h3>
+        <p>Müştəri dəstəyi üçün çatbot sistemi — daxil olan sorğuların böyük hissəsini avtomatik cavablandırır.</p>
+        <div class="tags"><span>Python</span><span>FastAPI</span></div>
+        <div class="links">github ↗</div>
       </div>
     </div>
   </section>
@@ -126,14 +129,14 @@
     <h2>texnologiyalar</h2>
     <p class="sub">Gündəlik istifadə etdiyim stack.</p>
     <div class="stack">
-      <div class="tech"><b>⚛</b>React / Next.js</div>
-      <div class="tech"><b>🟢</b>Node.js</div>
-      <div class="tech"><b>🐍</b>Python</div>
-      <div class="tech"><b>🗄</b>PostgreSQL</div>
-      <div class="tech"><b>📱</b>React Native</div>
-      <div class="tech"><b>☁</b>AWS / Vercel</div>
-      <div class="tech"><b>🐳</b>Docker</div>
-      <div class="tech"><b>🔀</b>Git / CI-CD</div>
+      <div class="tech">React / Next.js</div>
+      <div class="tech">Node.js</div>
+      <div class="tech">Python</div>
+      <div class="tech">PostgreSQL</div>
+      <div class="tech">React Native</div>
+      <div class="tech">AWS / Vercel</div>
+      <div class="tech">Docker</div>
+      <div class="tech">Git / CI-CD</div>
     </div>
   </section>
 
@@ -150,7 +153,7 @@
         <div><span class="k">email:</span> <span class="v">tural@example.com</span></div>
         <div><span class="k">github:</span> <span class="v">github.com/turaldev</span></div>
         <div><span class="k">linkedin:</span> <span class="v">linkedin.com/in/turaldev</span></div>
-        <div><span class="k">status:</span> <span class="v">✅ Yeni layihələrə açığam</span></div>
+        <div><span class="k">status:</span> <span class="v">yeni layihələrə açığam</span></div>
       </div>
     </div>
   </section>
