@@ -27,7 +27,9 @@
   .hero h1{font-size:clamp(2.2rem,5vw,3.6rem);font-weight:800;letter-spacing:-1.5px;line-height:1.1;margin-bottom:20px}
   .hero h1 span{color:var(--accent)}
   .hero p{color:var(--muted);font-size:1.08rem;margin-bottom:32px;max-width:460px}
-  .avatar{aspect-ratio:1;border-radius:32px;background:linear-gradient(135deg,#7c3aed,#db2777,#f59e0b);display:flex;align-items:center;justify-content:center;font-size:3.4rem;font-weight:800;color:#fff;letter-spacing:2px;box-shadow:0 30px 60px rgba(124,58,237,.3);rotate:3deg}
+  .avatar{aspect-ratio:1;border-radius:32px;overflow:hidden;box-shadow:0 30px 60px rgba(124,58,237,.25);rotate:3deg;transition:.4s}
+  .avatar:hover{rotate:0deg}
+  .avatar img{width:100%;height:100%;object-fit:cover;display:block}
 
   section{padding:80px 0}
   h2{font-size:clamp(1.6rem,3vw,2.3rem);font-weight:800;letter-spacing:-1px;margin-bottom:12px}
@@ -76,7 +78,7 @@
       <p>Loqo dizaynından tam brendinq paketlərinə qədər — bizneslərin vizual dilini yaradıram. 40+ tamamlanmış layihə, 30+ məmnun müştəri.</p>
       <a href="#isler" class="btn btn-dark">İşlərimə bax ↓</a>
     </div>
-    <div class="avatar">A.M.</div>
+    <div class="avatar"><img src="img/dizayner-hero.jpg" alt="İş masası"></div>
   </header>
 </div>
 
@@ -118,7 +120,7 @@
     <div class="cta">
       <h2>Gəlin birlikdə işləyək</h2>
       <p>Layihəniz üçün pulsuz konsultasiya — fikrinizi bölüşün, 24 saat ərzində cavab verim.</p>
-      <a href="mailto:info@example.com" class="btn btn-light">Mənə yazın</a>
+      <a href="https://wa.me/994553603227" class="btn btn-light">WhatsApp-la yaz</a>
     </div>
   </div>
 </section>

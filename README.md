@@ -37,13 +37,14 @@ Alternativ: Vercel CLI ilə — qovluqda `npx vercel --prod` əmrini icra edin.
 >
 > 🎨 Peşənizə uyğun fərdi dizayn
 > 📱 100% mobil uyğunluq
-> ⚡ 24-48 saata təhvil
-> 🔗 Öz linkinizlə paylaşın — CV-dən 3 dəfə güclü təsir!
+> ⚡ 2-4 günə təhvil
+> 💰 Qiymət: cəmi 30 AZN
+> 🔗 Öz linkinizlə paylaşın — CV-dən qat-qat güclü təsir!
 >
 > 👇 Canlı nümunələrə baxın:
 > 🌐 https://portfolionumuneleri.vercel.app
 >
-> 📩 Sifariş üçün DM yazın və ya şərhdə "+" qoyun!
+> 📲 Sifariş üçün WhatsApp: 055 360 32 27
 > #portfolio #smm #dizayn #freelance #karyera
 
 *(Linki öz Vercel ünvanınızla əvəz etməyi unutmayın.)*
